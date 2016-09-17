@@ -53,6 +53,7 @@ body{
     font-family: "Microsoft YaHei", u5FAEu8F6Fu96C5u9ED1, Arial, SimSun, u5B8Bu4F53;
 }
 
+	}
 	/* Style for our header texts
 	* --------------------------------------- */
 	h1{
@@ -123,6 +124,7 @@ body{
 	padding:6px 24px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #ffffff;
+
 }
 	.myButton:hover {
 		background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f6f6f6), color-stop(1, #ffffff));
@@ -165,7 +167,9 @@ body{
 
 	.title2{
 		text-align: left;
-		text-indent: 19em;
+		text-indent: 5px;
+		margin-top:20px;
+		
 	}
 	#section1 h1{
 		margin-left: 800px;
@@ -173,13 +177,13 @@ body{
 	#section1 h4{
 		margin-right:800px; 
 	}
-	#section1 ul li{
+	#section1 .imgItem{
 		width: 240px;
 		height: 130px;
 		overflow: hidden;
 	}
 
-	#section1 ul li:hover img{
+	#section1 .imgItem:hover img{
 		opacity: 1;
 		-webkit-animation: flash 1.5s;
 		animation: flash 1.5s;
@@ -264,6 +268,7 @@ body{
 		padding-right: 10px;
 	}
 	.contents{
-		width: 900px;
+		width: 1000px;
 		margin:0 auto;
 	}
+	.imgItem{float: left;margin:10px 5px 10px 5px;}

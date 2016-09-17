@@ -29,40 +29,44 @@
 			<source src="imgs/flowers.webm" type="video/webm">
 		</video>
 		<div class="layer">
-			<img src="imgs/img (1).png"/>
+			<img src="imgs/sugar_logo.png"/>
 			<div class="triangleIcon"></div>
 		</div>
 	</div>
 	<div class="section" id="section1">
 		<h1>PORTFOLIO</h1>
 		<h4>宣传片/CF 系列</h4>
-		<div class="container01" style="margin-top:800px">
-		<p class="title2">森马 Spring 2015 </p>
-		<ul>
-			<li><img src="imgs/img (3).png" /></li>
-			<li><img src="imgs/img (4).png" /></li>
-			<li><img src="imgs/img (5).png" /></li>
-			<li><img src="imgs/img (6).png" /></li>
-		</ul>
-		<p class="title2">Millet Archstep</p>
-		<ul>
-			<li><img src="imgs/img (7).png" /></li>
-			<li><img src="imgs/img (8).png" /></li>
-			<li><img src="imgs/img (9).png" /></li>
-			<li><img src="imgs/img (10).png" /></li>
-		</ul>
-		<p class="title2">NS电视购物 2014 企业PR</p>
-		<ul>
-			<li><img src="imgs/img (11).png" /></li>
-			<li><img src="imgs/img (12).png" /></li>
-			<li><img src="imgs/img (13).png" /></li>
-			<li><img src="imgs/img (14).png" /></li>
-		</ul>
+		
+		<div class="container01" style="position:relative">
+		
+		<div class="contents">
+			<p class="title2">森马 Spring 2015 </p>
+			<div class="imgItem"><img src="imgs/img (3).png" /></div>
+			<div class="imgItem"><img src="imgs/img (4).png" /></div>
+			<div class="imgItem"><img src="imgs/img (5).png" /></div>
+			<div class="imgItem"><img src="imgs/img (6).png" /></div>
 		</div>
-		<button onclick="ContactUs()" class="myButton">MORE +</button>
+		<div class="contents">
+		<p class="title2">Millet Archstep</p>
+			<div class="imgItem"><img src="imgs/img (7).png" /></div>
+			<div class="imgItem"><img src="imgs/img (8).png" /></div>
+			<div class="imgItem"><img src="imgs/img (9).png" /></div>
+			<div class="imgItem"><img src="imgs/img (10).png" /></div>
+		</div>
+		<div class="contents">
+			<p class="title2">NS电视购物 2014 企业PR</p>
+			<div class="imgItem"><img src="imgs/img (11).png" /></div>
+			<div class="imgItem"><img src="imgs/img (12).png" /></div>
+			<div class="imgItem"><img src="imgs/img (13).png" /></div>
+			<div class="imgItem"><img src="imgs/img (14).png" /></div>
+		</div >
+		<button onclick="ContactUs()" class="myButton" style="position:absolute;top:520px;left:47%;">MORE +</button>
+		</div>
+		
 	</div>
 	<div class="section" id="section2">	
 	<h1 style="font-size:3em">后期效果制作</h1>
+	<div class="contents">
 	<P class="title2">三星 K9 坦克</P>
 		<ul>
 			<li><img src="imgs/img (15).png" /></li>
@@ -85,8 +89,10 @@
 		</ul>
 		<button onclick="ContactUs()" class="myButton">MORE +</button>
 		</div>
+		</div>
 	<div class="section" id="section3">
-		<h1 style="margin-bottom:30px">MV制作</h1>
+		<h1 style="margin-bottom:30px;font-size:0.2em">MV制作</h1>
+		<div class="contents">
 		<p class="title2">One piece(윤상)/Let’s get it</p>
 		<ul>
 			<li><img src="imgs/img (27).png" /></li>
@@ -102,6 +108,7 @@
 			<li><img src="imgs/img (34).png" /></li>
 		</ul>
 		<button onclick="ContactUs()" class="myButton">MORE +</button>
+	</div>
 	</div>
 	<div class="section" id="section4">
 	<h1 style="margin-bottom:30px">海报/画报拍摄</h1>
@@ -188,7 +195,7 @@
 		<h1 style="margin-bottom:30px">广告投放/宣传推广</h1>
 			<img  src="imgs/img (46).png"/>	
 		<div class="layer">
-			<img src="imgs/img (1).png"/>
+			<img src="imgs/sugar_logo.png"/>
 			<div class="triangleIcon"></div>
 		</div>
 	</div>
@@ -328,11 +335,14 @@
 						case 2:
 							move('#section1 h1').set('margin-left',0).end();
 							move('#section1 h4').set('margin-right',0).end();
-							move('#section1 .container01').set('margin-top','3%').end();
+							move('#section1 .container01').set('margin-top','0').end();
 							
 							break;
 						case 3:
 							move('#section2 h1').scale(0.5).end();
+							break;
+						case 4:
+							move('#section3 h1').scale(2).end();
 							break;
 						default:
 							break;
